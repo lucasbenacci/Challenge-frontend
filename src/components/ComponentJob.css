@@ -1,0 +1,80 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+    border-radius: 50px;
+    margin-left: 20px;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.card:hover {
+    box-shadow: 0px 10px 50px -10px #08080879;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    margin: 0;
+    height: 40px;
+    width: auto;
+}
+
+.header p a {
+    color: #FF6C22;
+    transition: all 0.3s ease 0s;
+}
+
+.header p a:hover {
+    color: #000000;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #192655;
+}
+
+.body h2 {
+
+}
+
+.body h3 {
+
+}
+
+.body p {
+
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.footer img {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+.footer img:hover {
+    filter: invert();
+}
