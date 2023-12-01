@@ -8,10 +8,10 @@ export default function Job(props) {
 
     return(
         <>
-            <div className="card" onClick={() => setOpen(!open)}>
+            <div className="card">
                 <div className="header">
                     <img src={props.logo} alt="Logo da Empresa" />
-                    <p><a href="#" >{props.salary}<i class='bx bx-chevron-right'></i></a></p>
+                    <p><a href="#" onClick={() => setOpen(!open)}>{props.salary}<i class='bx bx-chevron-right'></i></a></p>
                 </div>
                 <div className="body">
                     <h2>{props.profession}</h2>
