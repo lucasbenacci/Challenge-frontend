@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Job from './components/ComponentJob.jsx'
+import Job from './components/cardJobs/ComponentJob.jsx'
 import './index.css';
 import JobsDb from '../db.json';
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
