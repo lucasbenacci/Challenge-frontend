@@ -1,28 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
 import Job from './components/ComponentJob.jsx'
 import './index.css';
-import NikeLogo from './assets/Nike.jpg'
-import AdidasLogo from './assets/Adidas.png'
+import JobsDb from '../db.json';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div className="main">
-    <Job 
-      logo={NikeLogo}
-      title="Nike"
-      subtitle="Ali"
-      description=""
-      salary="2500.00"
-    />
-    <Job 
-      logo={AdidasLogo}
-      title="Adidas"
-      subtitle="Aqui"
-      description=""
-      salary="3500.00"
-    />
+      
+      {
+        JobsDb.jobs.map(function(item) {
+          return (
+            <div className="JobsCard" key={item.id}>
+              <Job 
+                logo={item.logo}
+                profession={item.profession}
+                city={item.city}
+                description={item.description}
+                salary={item.salary}
+                benefits={
+                  item.benefits.map(function(data) {
+                    return (
+                      <div key={data.id}>
+                          {data.name}
+                      </div>
+                    )
+                  })
+                }
+              />
+            </div>
+          )
+        })
+      }
     </div>
   </React.StrictMode>,
 )

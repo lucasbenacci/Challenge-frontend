@@ -12,6 +12,7 @@
     border-radius: 50px;
     margin-left: 20px;
     transition: all 0.3s ease 0s;
+    width: 300px;
     
 }
 
@@ -40,23 +41,34 @@
     color: #000000;
 }
 
+.header p i {
+    color: #000000;
+    transition: all 0.3s ease 0s;
+}
+
 .body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: #192655;
 }
 
 .body h2 {
-
+    color: #192655;
 }
 
 .body h3 {
-
+    color: #19265575;
+    font-weight: 600;
 }
 
 .body p {
-
+    color: #192655;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; 
+    -webkit-box-orient: vertical;
 }
 
 .footer {
@@ -67,14 +79,9 @@
     margin-top: 40px;
 }
 
-.footer img {
+.benefits {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    width: 50px;
-    height: 50px;
-    transition: all 0.3s ease 0s;
-}
-
-.footer img:hover {
-    filter: invert();
+    color: #FF6C22;
 }
